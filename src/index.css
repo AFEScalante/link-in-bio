@@ -5,13 +5,6 @@ body {
   background-color: gray;
 }
 
-main {
-  position: relative;
-  opacity: 0;
-  filter: blur(10px);
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out;
-}
-
 header {
   display: flex;
   flex-direction: column;

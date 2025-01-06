@@ -3,7 +3,7 @@ import { FaBluesky, FaComputer, FaGithub } from "react-icons/fa6";
 
 const LINKS = [
   {
-    label: "Blog personal",
+    label: "Blog",
     url: "https://angel-blog.netlify.app",
     icon: <FaComputer size={22} />,
   },
@@ -22,8 +22,8 @@ const LINKS = [
 function LinkList() {
   return (
     <ul className="list-links">
-      {LINKS.map(({ url, label, icon }) => (
-        <Link key={url} href={url} icon={icon}>
+      {LINKS.map(({ url, label, icon }, index) => (
+        <Link key={url} href={url} icon={icon} delayRate={index}>
           {label}
         </Link>
       ))}
